@@ -63,7 +63,7 @@ After a while you will get configuration string and QR code:
 
 You can run TUI with `-m` or `--menu` option:
 ```
-bash <(curl -sL https://bit.ly/realityez) -m
+bash <(curl -sL https://bit.ly/4o5MBpN) -m
 ```
 And then you will see management menu in your terminal:
 ![image](https://github.com/aleskxyz/reality-ezpz/assets/39186039/a727148c-1a11-4702-80f3-ab8b46d916af)
@@ -172,7 +172,7 @@ You can add, view and delete multiple user account with this script easily!
 ### Add User
 You can add additional user by using `--add-user` option:
 ```
-bash <(curl -sL https://bit.ly/realityez) --add-user user1
+bash <(curl -sL https://bit.ly/4o5MBpN) --add-user user1
 ```
 This command will create `test1` as a new user.
 
@@ -181,20 +181,20 @@ Notice: Username can only contains A-Z, a-z and 0-9
 ### List Users
 You can view a list of all users by using `--list-users` option:
 ```
-bash <(curl -sL https://bit.ly/realityez) --list-users
+bash <(curl -sL https://bit.ly/4o5MBpN) --list-users
 ```
 
 ### Show User Configuration
 You can get config string and QR code of the user for importing by using `--show-user` option:
 ```
-bash <(curl -sL https://bit.ly/realityez) --show-user user1
+bash <(curl -sL https://bit.ly/4o5MBpN) --show-user user1
 ```
 This command will print config string and QR code of `user1`
 
 ### Delete User
 You can delete a user by using `--delete-user` option:
 ```
-bash <(curl -sL https://bit.ly/realityez) --delete-user user1
+bash <(curl -sL https://bit.ly/4o5MBpN) --delete-user user1
 ```
 This command will delete `user1`
 
@@ -210,14 +210,14 @@ Default SNI domain is `www.google.com`.
 
 You can change it by using `--domain` or `-d` options:
 ```
-bash <(curl -sL https://bit.ly/realityez) -d yahoo.com
+bash <(curl -sL https://bit.ly/4o5MBpN) -d yahoo.com
 ```
 ### Change transport protocol
 Default transport protocol is `tcp`.
 
 You can change it by using `--transport` or `-t` options:
 ```
-bash <(curl -sL https://bit.ly/realityez) -t http
+bash <(curl -sL https://bit.ly/4o5MBpN) -t http
 ```
 Valid options are `tcp`,`http`, `grpc`, `ws`, `tuic`, `hysteria2` and `shadowtls`.
 
@@ -245,40 +245,40 @@ First, ShadowTLS will establish a secure connection with the server, then Shadow
 ### Block malware and adult contents
 You can block malware and adult contents by using `--enable-safenet` option:
 ```
-bash <(curl -sL https://bit.ly/realityez) --enable-safenet true
+bash <(curl -sL https://bit.ly/4o5MBpN) --enable-safenet true
 ```
 You can disable this feature with `--enable-safenet false` option.
 
 ### Get runnig configuration
 You can get the running configuration with `--show-server-config` option:
 ```
-bash <(curl -sL https://bit.ly/realityez) --show-server-config
+bash <(curl -sL https://bit.ly/4o5MBpN) --show-server-config
 ```
 
 ### Regenerate configuration keys
 You can regenerate keys by using `--regenerate` option:
 ```
-bash <(curl -sL https://bit.ly/realityez) --regenerate
+bash <(curl -sL https://bit.ly/4o5MBpN) --regenerate
 ```
 All other configuration will be same as before.
 
 ### Restart services
 You can restart the service by using `-r` or `--restart` options:
 ```
-bash <(curl -sL https://bit.ly/realityez) -r
+bash <(curl -sL https://bit.ly/4o5MBpN) -r
 ```
 
 ### Restore default configuration
 You can restore default configuration by using `--default` option.
 ```
-bash <(curl -sL https://bit.ly/realityez) --default
+bash <(curl -sL https://bit.ly/4o5MBpN) --default
 ```
 User account will not change with this option.
 
 ### Uninstall
 You can delete configuration and services by using `--uninstall` or `-u` options:
 ```
-bash <(curl -sL https://bit.ly/realityez) -u
+bash <(curl -sL https://bit.ly/4o5MBpN) -u
 ```
 
 ### Change port
@@ -290,13 +290,13 @@ In case of using `letsencrypt` security option, port `80` has to be available fo
 
 You can change it by using `--port` option:
 ```
-bash <(curl -sL https://bit.ly/realityez) --port 8443
+bash <(curl -sL https://bit.ly/4o5MBpN) --port 8443
 ```
 
 ### Change engine core
 Default engine core is sing-box but you can also switch to xray by using `--core` or `-c` options:
 ```
-bash <(curl -sL https://bit.ly/realityez) -c xray
+bash <(curl -sL https://bit.ly/4o5MBpN) -c xray
 ```
 Valid options are `xray` and `sing-box`.
 
@@ -305,7 +305,7 @@ You can create a backup from users and configuration and upload it to https://te
 
 The `--backup-password` option allows you to protect the backup zip file with the specified password. (Optional)
 ```
-bash <(curl -sL https://bit.ly/realityez) --backup --backup-password "P@ssw0rd"
+bash <(curl -sL https://bit.ly/4o5MBpN) --backup --backup-password "P@ssw0rd"
 ```
 This command will give you a URL to download you backup file. The URL is only valid for 3 days.
 
@@ -316,11 +316,11 @@ You need to give the path or URL of the backup file to restore.
 
 The `--backup-password` option allows you to restore the password protected backup zip file.
 ```
-bash <(curl -sL https://bit.ly/realityez) --restore /path/to/backup.zip --backup-password "P@ssw0rd"
+bash <(curl -sL https://bit.ly/4o5MBpN) --restore /path/to/backup.zip --backup-password "P@ssw0rd"
 ```
 or
 ```
-bash <(curl -sL https://bit.ly/realityez) --restore "https://www.example.com/backup.zip" --backup-password "P@ssw0rd"
+bash <(curl -sL https://bit.ly/4o5MBpN) --restore "https://www.example.com/backup.zip" --backup-password "P@ssw0rd"
 ```
 
 You can migrate users and configuration from one server to another by:
@@ -333,7 +333,7 @@ You can also use the TUI for changing the configuration of the service.
 
 To access to TUI you can use `-m` or `--menu` options:
 ```
-bash <(curl -sL https://bit.ly/realityez) -m
+bash <(curl -sL https://bit.ly/4o5MBpN) -m
 ```
 
 ## Telegram Bot
@@ -343,13 +343,13 @@ You should get a Telegram bot token from `@BotFather` Telegram account.
 
 Then you can enable Telegram bot by using this command as an example:
 ```
-bash <(curl -sL https://bit.ly/realityez) --enable-tgbot true --tgbot-token <telegram-bot-token> --tgbot-admins=<your-telegram-username>
+bash <(curl -sL https://bit.ly/4o5MBpN) --enable-tgbot true --tgbot-token <telegram-bot-token> --tgbot-admins=<your-telegram-username>
 ```
 In the command above you have to provide a comma separated list of Telegram usernames (without leading '@') which are authorized to use Telegram bot.
 
 You can disable Telegram bot with this command:
 ```
-bash <(curl -sL https://bit.ly/realityez) --enable-tgbot false
+bash <(curl -sL https://bit.ly/4o5MBpN) --enable-tgbot false
 ```
 
 ## Cloudflare WARP
@@ -357,7 +357,7 @@ This script uses official Cloudflare WARP client for connecting to Cloudflare ne
 
 You can enable Cloudflare WARP by using `--enable-warp true` option. This script will create and register a free WAPR account and use it.
 ```
-bash <(curl -sL https://bit.ly/realityez) --enable-warp true
+bash <(curl -sL https://bit.ly/4o5MBpN) --enable-warp true
 ```
 Free account has traffic limitation and lower performance in comparison with WARP+ account which needs license.
 
@@ -365,13 +365,13 @@ You can either buy an WARP+ Unlimited license or get a free WARP+ license from t
 
 After getting a license from that telegram bot, you can use the license for your server with `--warp-license` option:
 ```
-bash <(curl -sL https://bit.ly/realityez) --warp-license aaaaaaaa-bbbbbbbb-cccccccc
+bash <(curl -sL https://bit.ly/4o5MBpN) --warp-license aaaaaaaa-bbbbbbbb-cccccccc
 ```
 You can use each warp+ license on 4 devices only.
 
 You can disable Cloudflare WARP with `--enable-warp false`:
 ```
-bash <(curl -sL https://bit.ly/realityez) --enable-warp false
+bash <(curl -sL https://bit.ly/4o5MBpN) --enable-warp false
 ```
 
 ## Example
@@ -386,7 +386,7 @@ We want to setup a server with these configurations:
 
 So we need to execute this command:
 ```
-bash <(curl -sL https://bit.ly/realityez) --transport=grpc --domain=www.wikipedia.com --enable-safenet=true --enable-warp=true --warp-license=26z9i0ld-WG0wy324-rA703nZ2
+bash <(curl -sL https://bit.ly/4o5MBpN) --transport=grpc --domain=www.wikipedia.com --enable-safenet=true --enable-warp=true --warp-license=26z9i0ld-WG0wy324-rA703nZ2
 ```
 ## Custom Configuration
 Use this feature only if you know exactly what you are doing!
